@@ -6,7 +6,6 @@ const NewsList = ({ news = [], setNews, setError }) => {
   const pageSize = 5;
 
   useEffect(() => {
-    // const API_KEY = '1a3408fa2f3e4af89fb08a64e60d02e7';
     const API_URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=1a3408fa2f3e4af89fb08a64e60d02e7`;
 
     const fetchNews = async () => {
