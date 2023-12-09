@@ -13,6 +13,7 @@ const NewsList = ({ news = [], setNews, setError }) => {
         const response = await fetch(API_URL);
         const data = await response.json();
         if (data.articles) {
+          console.log(data.articles);
           setNews(data.articles);
         } else {
           setError('Error fetching news. Please try again later.');
